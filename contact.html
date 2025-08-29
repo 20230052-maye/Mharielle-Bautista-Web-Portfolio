@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mharielle Bautista</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="contact.css">
+
+</head>
+<body>
+
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light pastel-navbar fixed-top shadow-sm">
+  <div class="container">
+    <i class="bi bi-person-circle text-pastel me-2"></i>
+    <a class="navbar-brand fw-bold" href="index.html">Web Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link " href="education.html">Education</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html"><i class="bi bi-images me-1"></i> </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Floating Action Button Bottom Right -->
+  <div class="fab-container-bottom">
+    <div class="collapse fab-menu-bottom" id="fabMenuBottom">
+      <a href="resume.pdf" target="_blank" class="fab-item collapse-link">
+        <i class="bi bi-file-earmark-person"></i> Resume
+      </a>
+      <a href="Application Letter.pdf" target="_blank" class="fab-item collapse-link">
+        <i class="bi bi-envelope-paper"></i> Application Letter
+      </a>
+    </div>
+    <button class="fab-btn" data-bs-toggle="collapse" data-bs-target="#fabMenuBottom">
+      <i class="bi bi-folder2-open"></i>
+    </button>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="container my-5 pt-5">    
+    <h2 class="fw-bold pastel-heading text-center mb-4">Get in Touch</h2>
+    <p class="text-center mb-5">Feel free to send me a message! 💌</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="contact-form p-4 rounded shadow-sm">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control pastel-input" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control pastel-input" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control pastel-input" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn pastel-btn w-100">Send Message</button>
+          </form>
+
+          <!-- Google Maps Embed -->
+          <div class="map-container mt-4">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.1234567890123!2d121.5367890123456!3d13.9401234567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33b0f123456789ab%3A0x1234567890abcdef!2sConcepcion%2C%20Banahaw%2C%20Sariaya%2C%20Quezon!5e0!3m2!1sen!2sph!4v1234567890123!5m2!1sen!2sph" 
+              width="100%" 
+              height="300" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="social-links text-center mt-4">
+            <p class="mb-2">Or connect with me here 🌸</p>
+            <a href="https://facebook.com/mhariellevillanuevabautista" class="social-icon facebook"><i class="bi bi-facebook"></i></a>
+<a href="https://instagram.com/maryelllllllllll_" class="social-icon instagram"><i class="bi bi-instagram"></i></a>
+<a href="https://google.com/20230052@cstc.edu.ph" class="social-icon email"><i class="bi bi-envelope-fill"></i></a>
+<a href="https://x.com/mhrllbtst" class="social-icon twitter"><i class="bi bi-twitter-x"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!--  Footer -->
+<footer class="pt-5 pb-4" style=" background: linear-gradient(135deg, #ffb5bd, #ff9eab);">
+  <div class="container-fluid px-0">
+    <div class="row mx-0">
+
+      <!-- Logo + Tagline -->
+      <div class="col-md-4 mb-4 px-4">
+       
+        <h4 class="fw-bold">  <i class="bi bi-person-circle text-pastel me-2"></i>Web Porfolio</h4>
+        <p>It’s in the little details, the small moments and choices, that you can truly see who I am. </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4 px-4">
+        <h6 class="fw-bold">Quick Links</h6>
+        <ul class="list-unstyled">
+              <li><a href="#about.html" class="text-dark text-decoration-none">About</a></li>
+          <li><a href="#education.html" class="text-dark text-decoration-none">Education</a></li>
+          <li><a href="#contact.html" class="text-dark text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4 px-4">
+        <h6 class="fw-bold">Contact Me</h6>
+        <p><i class="bi bi-telephone-fill me-2"></i>+63 930 648 4007</p>
+        <p><i class="bi bi-envelope-fill me-2"></i>20230052@cstc.edu.ph</p>
+        <div class="d-flex gap-2 mt-2">
+          <a href="https://facebook.com/mhariellevillanuevabautista" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/mhrllbtst" class="text-dark fs-5"><i class="bi bi-twitter"></i></a>
+          <a href="https://instagram.com/maryelllllllllll_" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="https://discord.com/maryelbautista_64325" class="text-dark fs-5"><i class="bi bi-discord"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Copyright -->
+    <div class="text-center mt-3 border-top pt-3 mx-0">
+      <p class="mb-0">&copy; 2025 Mharielle Bautista | Web Portfolio</p>
+    </div>
+  </div>
+</footer>
+
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.pastel-navbar');
+    if (window.scrollY > 50) { 
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | Web Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  
+  <link rel="stylesheet" href="gallery.css">
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light pastel-navbar fixed-top shadow-sm">
+    <div class="container">
+      <i class="bi bi-person-circle text-pastel me-2"></i>
+      <a class="navbar-brand fw-bold" href="index.html">Web Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="gallery.html"><i class="bi bi-images me-1"></i> </a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Gallery Section -->
+  <section class="container my-5">
+    <h2 class="text-center pastel-heading"></h2>
+
+    <!-- Filter Buttons -->
+    <div class="text-center mb-4">
+      <button class="btn filter-btn active" data-filter="all">All</button>
+      <button class="btn filter-btn" data-filter="nature-travel"> Nature & Travel</button>
+      <button class="btn filter-btn" data-filter="family-friends">Family & Friends</button>
+      <button class="btn filter-btn" data-filter="pageantry">Pageantry</button>
+      <button class="btn filter-btn" data-filter="food">Food</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="row g-4">
+        
+<!-- Gallery Modal -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-transparent border-0 text-center">
+      <div class="modal-body p-0">
+        <img src="" id="modalImage" alt="Gallery Image" class="img-fluid modal-img">
+      </div>
+      <!-- Close button below image -->
+      <button type="button" class="btn-pink mt-3 mb-3" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+
+
+
+     <!-- Picture 1 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item family-friends">
+        <div class="gallery-card">
+          <img src="Volleyball Team.jpg" alt="Photo 1" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Volleyball Team 🏐</div>
+        </div>
+      </div>
+
+            <!-- Picture 2 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item pageantry">
+        <div class="gallery-card">
+          <img src="1st municipal pageant.jpg" alt="Photo 2" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">1st Municipal Pageant(MMTS 2024)👠</div>
+        </div>
+      </div>
+
+      <!-- Picture 3 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+        <div class="gallery-card">
+          <img src="St. Louis Bishop Parish.jpg" alt="Photo 3" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">St. Louis Bishop Parish - Lucban, Quezon ⛪</div>
+        </div>
+      </div>
+
+      <!-- Picture 4 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+        <div class="gallery-card">
+          <img src="Bantakay.jpg" alt="Photo 4" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Bantakay Falls 🏞️</div>
+        </div>
+      </div>
+      <!-- Picture 5 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+  <div class="gallery-card">
+    <img src="Atimonan, Quezon.jpg" alt="Photo 35" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">Quick Escape at Atimonan, Quezon 🌲</div>
+  </div>
+</div>
+
+
+           <!-- Picture 6 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+        <div class="gallery-card">
+          <img src="Bay Park.jpg" alt="Photo 6" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Bay Park Atimonan, Quezon 🌴</div>
+        </div>
+      </div>
+
+          <!-- Picture 7 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+        <div class="gallery-card">
+          <img src="Calinga Happy Place.jpg" alt="Photo 7" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Calinga Happy Place Dolores, Quezon ⛰️</div>
+        </div>
+      </div>
+          <!-- Picture 8 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 gallery-item pageantry">
+  <div class="gallery-card">
+    <img src="Fave Photoshoot.jpg" alt="Photo 34" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">Favorite Photoshoot 👗</div>
+  </div>
+</div>
+
+          <!-- Picture 9 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item family-friends">
+        <div class="gallery-card">
+          <img src="Father Side.jpg" alt="Photo 9" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Father Side Bonding 🍲 </div>
+        </div>
+      </div>
+          <!-- Picture 10 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item pageantry">
+        <div class="gallery-card">
+          <img src="Ms. GACANHS.jpg" alt="Photo 10" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">1st ever Crown - MS. GACANHS 2023 👑</div>
+        </div>
+      </div>
+          <!-- Picture 11 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+        <div class="gallery-card">
+          <img src="Hiking.jpg" alt="Photo 11" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Mountain Hike 🏔️</div>
+        </div>
+      </div>
+          <!-- Picture 12 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+        <div class="gallery-card">
+          <img src="Beach Sunset.jpg" alt="Photo 12" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Beach Sunset 🌅</div>
+        </div>
+      </div>
+          <!-- Picture 13 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+        <div class="gallery-card">
+          <img src="Night Swimming.jpg" alt="Photo 13" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Night Swimming at Chrisler Resort 🏖️</div>
+        </div>
+      </div>
+          <!-- Picture 14 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item pageantry">
+        <div class="gallery-card">
+          <img src="My Girlies.jpg" alt="Photo 14" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2"> My Girlies 👯‍♀️</div>
+        </div>
+      </div>
+          <!-- Picture 15 -->
+     <div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+  <div class="gallery-card">
+    <img src="Lumampao.jpg" alt="Photo 33" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">Lumampao Viewdeck 🏞️</div>
+  </div>
+</div>
+
+          <!-- Picture 16 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item pageantry">
+        <div class="gallery-card">
+          <img src="1st Photoshoot.jpg" alt="Photo 16" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">1st Photoshoot 📸 </div>
+        </div>
+      </div>
+          <!-- Picture 17 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item family-friends">
+        <div class="gallery-card">
+          <img src="Bf Fam.jpg" alt="Photo 17" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Boyfriend's Family 👨‍👩‍👧‍👦</div>
+        </div>
+      </div>
+          <!-- Picture 18 -->
+    <div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+  <div class="gallery-card">
+    <img src="NAIA 1.jpg" alt="Photo 32" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">NAIA 1 🏢</div>
+  </div>
+</div>
+
+          <!-- Picture 19 -->
+      <div class="col-sm-6 col-md-4 col-lg-3 gallery-item family-friends">
+        <div class="gallery-card">
+          <img src="Inuman Session.jpg" alt="Photo 19" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+          <div class="gallery-caption text-center p-2">Inuman Session 🍻</div>
+        </div>
+      </div>
+<!-- Picture 20 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item family-friends">
+  <div class="gallery-card">
+    <img src="SHS Friends.jpg" alt="Photo 20" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">SHS Friends 🥰</div>
+  </div>
+</div>
+
+<!-- Picture 21 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+  <div class="gallery-card">
+    <img src="Atimonan Zigzag.jpg" alt="Photo 21" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2"> Atimonan Zigzag Park 🌿</div>
+  </div>
+</div>
+
+<!-- Picture 22 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item family-friends">
+  <div class="gallery-card">
+    <img src="MOA.jpg" alt="Photo 22" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">Mall of Asia with Him ❤️</div>
+  </div>
+</div>
+
+<!-- Picture 23 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+  <div class="gallery-card">
+    <img src="Gulugod Baboy.jpg" alt="Photo 23" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">Mt. Gulugod Baboy Mabini, Batangas 🏔️</div> 
+  </div>
+</div>
+
+<!-- Picture 24 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item family-friends">
+  <div class="gallery-card">
+    <img src="Mother.jpg" alt="Photo 24" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">Supportive Mother 👩‍👧</div>
+  </div>
+</div>
+
+<!-- Picture 25 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item pageantry">
+  <div class="gallery-card">
+    <img src="Long Gown.jpg" alt="Photo 25" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">2nd Municipal Pageant(MMTC 2025) 👠</div>
+  </div>
+</div>
+
+
+<!-- Picture 26 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item nature-travel">
+  <div class="gallery-card">
+    <img src="Camp Narra.jpg" alt="Photo 26" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">Unwind at Camp Narra 🌳</div>
+  </div>
+</div>
+
+<!-- Picture 27 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item pageantry">
+  <div class="gallery-card">
+    <img src="MMTC National Costume.jpg" alt="Photo 27" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">MMTC National Costume 🍃</div>
+  </div>
+</div>
+<!-- Picture 28 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item family-friends">
+  <div class="gallery-card">
+    <img src="Family Bonding.jpg" alt="Photo 28" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">Family Bonding 🥳</div>
+  </div>
+</div>
+
+<!-- Picture 29 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item pageantry">
+  <div class="gallery-card">
+    <img src="MMTC Swimsuit Photoshoot.jpg" alt="Photo 29" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2"> MMTC Swimsuit Photoshoot 🎬</div>
+  </div>
+</div>
+
+<!-- Picture 30 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item family-friends">
+  <div class="gallery-card">
+    <img src="Ate's Flight.jpg" alt="Photo 30" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">Ate's Flight to Taiwan 🛫</div>
+  </div>
+</div>
+
+<!-- Picture 31 -->
+<div class="col-sm-6 col-md-4 col-lg-3 gallery-item pageantry">
+  <div class="gallery-card">
+    <img src="MMTC Swimsuit.jpg" alt="Photo 31" class="gallery-img" data-bs-toggle="modal" data-bs-target="#galleryModal">
+    <div class="gallery-caption text-center p-2">MMTC Swimsuit Portion 👙</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+  </section>
+
+  <!-- Modal for Image Preview -->
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <img id="modalImage" src="" class="img-fluid rounded shadow-lg" alt="Preview">
+        <div id="modalCaption" class="text-center mt-3 text-white fw-bold"></div>
+      </div>
+    </div>
+  </div>
+
+<!--  Footer -->
+<footer class="pt-5 pb-4" style=" background: linear-gradient(135deg, #ffb5bd, #ff9eab);">
+  <div class="container">
+    <div class="row">
+
+      <!-- Logo + Tagline -->
+      <div class="col-md-4 mb-4">
+             <h4 class="fw-bold">  <i class="bi bi-person-circle text-pastel me-2"></i>Web Porfolio</h4>
+        <p>It’s in the little details, the small moments and choices, that you can truly see who I am. </p> </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#about.html" class="text-dark text-decoration-none">About</a></li>
+          <li><a href="#education.html" class="text-dark text-decoration-none">Education</a></li>
+          <li><a href="#contact.html" class="text-dark text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold">Contact Me</h6>
+        <p><i class="bi bi-telephone-fill me-2"></i>+63 930 648 4007</p>
+        <p><i class="bi bi-envelope-fill me-2"></i>20230052@cstc.edu.ph</p>
+        <div class="d-flex gap-2 mt-2">
+          <a href="https://facebook.com/mhariellevillanuevabautista" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/mhrllbtst" class="text-dark fs-5"><i class="bi bi-twitter"></i></a>
+          <a href="https://instagram.com/maryelllllllllll_" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+          <a href="https://discord.com/maryelbautista_64325" class="text-dark fs-5"><i class="bi bi-discord"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Copyright -->
+    <div class="text-center mt-3 border-top pt-3">
+      <p class="mb-0">&copy; 2025 Mharielle Bautista | Web Portfolio</p>
+    </div>
+  </div>
+</footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JS for Modal & Filters -->
+  <script>
+    // Modal Image Preview
+    const galleryImages = document.querySelectorAll('.gallery-img');
+    const modalImage = document.getElementById('modalImage');
+    const modalCaption = document.getElementById('modalCaption');
+
+    galleryImages.forEach(img => {
+      img.addEventListener('click', () => {
+        modalImage.src = img.src;
+        modalCaption.textContent = img.nextElementSibling.textContent;
+      });
+    });
+
+    // Filter Functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+       
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+  const galleryImages = document.querySelectorAll('.gallery-img');
+const modalImage = document.getElementById('modalImage');
+
+galleryImages.forEach(img => {
+  img.addEventListener('click', () => {
+    modalImage.src = img.src;
+  });
+});
+    });
+
+      window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.pastel-navbar');
+    if (window.scrollY > 50) { 
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+  </script>
+
+</body>
+</html>
