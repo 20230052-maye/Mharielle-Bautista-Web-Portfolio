@@ -165,6 +165,19 @@
       navbar.classList.remove('scrolled');
     }
   });
+
+        const fabMenu = document.getElementById('fabMenuBottom');
+  
+
+  window.addEventListener('scroll', function () {
+
+    if (fabMenu.classList.contains('show')) {
+      let collapse = bootstrap.Collapse.getInstance(fabMenu); 
+      if (collapse) {
+        collapse.hide(); 
+      }
+    }
+  });
 </script>
 
 </body>
